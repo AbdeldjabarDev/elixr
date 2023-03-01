@@ -10,13 +10,15 @@ export default function Nav(props)
     {
        document.body.onscroll = function(e)
        {
-        console.log('scrolling : ' + window.scrollY + "and  : "  + parseInt(window.scrollY % window.innerHeight,10))
+        // console.log('scrolling : ' + window.scrollY + "and  : "  + parseInt(window.scrollY % window.innerHeight,10) )
         if(props.h)
        { if(window.scrollY === 0 || parseInt(window.scrollY % window.innerHeight,10) < 80  || parseInt(window.scrollY % window.innerHeight,10) > 740)
         {
-            console.log('scrolling : ' + window.scrollY + ' ' + vis)
+            // console.log('scrolling : ' + window.scrollY + ' ' + vis)
             setVis(false);
         }
+        else
+        setVis(true);
         return;
     }
         

@@ -4,7 +4,7 @@ import { ImLocation} from "react-icons/im"
 export default function Footer(props)
 {
     return (<div className="lg:h-[450px] h-fit  w-full bg-[#000d1a] lg:flex-row flex-col flex mt-[200px] pb-[100px]">
-    <div className="flex gap-10 flex-col w-fit text-white mt-[150px] ml-[200px]">
+    <div className="flex gap-10 flex-col w-fit text-white mt-[150px] lg:ml-[200px] ml-[80px]">
     <div className="flex gap-2"><BsTelephone></BsTelephone>Number   <span>+1 456 785</span></div>
     <div className="flex gap-2"><AiOutlineMail></AiOutlineMail>Email   <span>lorem.ipsum@gmail.com</span></div>
     <div className="flex gap-2"><ImLocation color="#ffffff"></ImLocation>Address  <span>lorem,Ipsum,Dolor</span></div>  
